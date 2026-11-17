@@ -1,0 +1,11 @@
+runs/
+reports/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+*.pid
+*.pem
+*.key

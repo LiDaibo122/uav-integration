@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "xd": {
+    "upstream": "https://github.com/yuan99993/xd-uav-system.git",
+    "upstream_branch": "dev",
+    "local_branch": "integration/ground-station",
+    "commit": "5289177fcb8c85bc9986c5f4ca11d1ea75ac3bb0"
+  },
+  "ground": {
+    "repository_name": "uav-ground-station",
+    "local_directory": "ground_station",
+    "branch": "main",
+    "commit": "011a8ca2cf34d5998377f92489702d84527e47fa"
+  },
+  "status": "source_revisions_recorded_runtime_integration_pending",
+  "validation": "source_structure_and_ground_regression_only; XD runtime integration not performed"
+}

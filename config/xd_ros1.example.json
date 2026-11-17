@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "example_only_not_connected",
+  "allocation_owner": "ground_station",
+  "transport": {
+    "kind": "ros1",
+    "ros_master_uri": "http://127.0.0.1:11311"
+  },
+  "coordinates": {
+    "frame_id": "world",
+    "datum_source": "/world/datum",
+    "datum": null,
+    "altitude_reference": "MUST_CONFIRM_WITH_XD_TF",
+    "use_ground_simulation_origin": false
+  },
+  "vehicles": [
+    {"id": "FW-01", "namespace": "/uav1", "vehicle_type": "fixedwing"},
+    {"id": "FW-02", "namespace": "/uav2", "vehicle_type": "fixedwing"},
+    {"id": "FW-03", "namespace": "/uav3", "vehicle_type": "fixedwing"}
+  ],
+  "interfaces": {
+    "state": "control_manager/state",
+    "world_odom": "state_estimator/main/frames/world/odom",
+    "takeoff": "control_manager/takeoff",
+    "task_path": "planning/task_path",
+    "cancel": "planning/cancel",
+    "land_home": "control_manager/land_home",
+    "external_control": "control_manager/external_control",
+    "planner_status": "planning/status",
+    "observations": "detect/detections_world"
+  }
+}
